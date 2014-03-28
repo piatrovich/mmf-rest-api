@@ -1,0 +1,14 @@
+<html ng-app="domainApp">
+<head>
+<script src="scripts/angular.js"></script>
+<script src="scripts/angular-resource.js"></script>
+<script src="scripts/app.js"></script>
+</head>
+<body>
+	<h1>Person</h1>
+	<div ng-controller="usernameCtrl">
+		<input ng-model="username"/>Person name: {{username}}
+		<input type="button" value="Load another name" ng-click="load()"/> 
+	</div>
+</body>
+</html>
