@@ -1,0 +1,10 @@
+GET /person
+
+Query param: 
+	id
+
+Param description:
+	id - int value
+
+Example: 
+	/person?pid={id}
