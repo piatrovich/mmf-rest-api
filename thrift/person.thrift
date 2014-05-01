@@ -36,4 +36,8 @@ service PersonService {
 		2: i32 page) 
 	throws (1: base:DenialOfServiceException)
 
+	bool hasMorePersons(
+		1: base.PersonEntry person) 
+	throws (1: base:DenialOfServiceException)
+
 }
