@@ -23,4 +23,17 @@ service PersonService {
 		1: string department)
 		throws(1: base.DenialOfServiceException)
 
+	/** pagination **/
+	list<base.PersonEntry> nextPersonGroup(
+		1: string request
+		/** number of current page **/
+		2: i32 page) 
+	throws (1: base:DenialOfServiceException)
+
+	list<base.PersonEntry> previousPersonGroup(
+		1: string request
+		/** number of current page **/
+		2: i32 page) 
+	throws (1: base:DenialOfServiceException)
+
 }
