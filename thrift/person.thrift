@@ -37,7 +37,8 @@ service PersonService {
 	throws (1: base:DenialOfServiceException)
 
 	bool hasMorePersons(
-		1: base.PersonEntry person) 
+		1: string request
+		2: base.PersonEntry person) 
 	throws (1: base:DenialOfServiceException)
 
 }
